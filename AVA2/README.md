@@ -1,3 +1,5 @@
+Desafio 1
+
 Inversão de String com Pilha em C
 
 
@@ -52,3 +54,27 @@ Estrutura de dados: Pilha (Stack)
 Alocação dinâmica (malloc / free)
 Ponteiros
 Lista encadeada
+
+Desafio 2
+
+Verificador de Expressões com Pilha em C
+Este projeto implementa um verificador de expressões utilizando pilha dinâmica em linguagem C. O objetivo é analisar se os símbolos de agrupamento — (), [] e {} — estão corretamente balanceados em uma expressão.
+
+Como funciona:
+O programa utiliza uma estrutura de dados do tipo pilha, implementada com listas encadeadas. A lógica é baseada no seguinte:
+
+Cada vez que um símbolo de abertura ((, [, {) é encontrado, ele é empilhado.
+Quando um símbolo de fechamento (), ], }) aparece, o programa verifica:
+Se a pilha está vazia → a expressão já é inválida.
+Caso contrário, remove o topo da pilha e verifica se os símbolos correspondem corretamente.
+Validação da expressão
+
+Ao final da leitura da expressão:
+Se todos os símbolos foram corretamente fechados e a pilha estiver vazia → a expressão é válida 
+Se houver algum erro de correspondência ou ainda existirem elementos na pilha → a expressão é inválida 
+
+Principais funções
+push: insere um elemento no topo da pilha
+pop: remove o elemento do topo
+isEmpty: verifica se a pilha está vazia
+matches: confere se os símbolos de abertura e fechamento são compatíveis
